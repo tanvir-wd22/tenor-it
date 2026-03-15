@@ -7,7 +7,7 @@ const Home = () => {
       <section className="mb-4 lg:mb-8 w-11/12 mx-auto">
         <Banner></Banner>
       </section>
-      <section>
+      <section className="mb-8 lg:mb-16">
         <Hero></Hero>
       </section>
     </div>
