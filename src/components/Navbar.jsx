@@ -1,4 +1,6 @@
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
+import logo from '../assets/logo.png';
+import { FaGithub } from 'react-icons/fa6';
 
 const Navbar = () => {
   const links = (
@@ -14,6 +16,7 @@ const Navbar = () => {
       </li>
     </>
   );
+  
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm">
@@ -27,13 +30,12 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {' '}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{' '}
+                />
               </svg>
             </div>
             <ul
@@ -43,13 +45,27 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <div>
+            <Link to="/">
+              <button className="btn btn-ghost flex items-center gap-1">
+                <img src={logo} className="w-8" alt="logo" />
+                <span className="text-xl text-purple-700 font-bold">
+                  Tenor It
+                </span>
+              </button>
+            </Link>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <Link to="https://github.com/tanvir-wd22">
+            <button className="btn btn-sm flex gap-1 items-center text-white bg-linear-to-r from-purple-700 to-violet-400 ">
+              <FaGithub></FaGithub>
+              <span>Contribute</span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
