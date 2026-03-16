@@ -6,7 +6,7 @@ const AppCard = ({ appItem }) => {
   const { id, image, title, downloads, ratingAvg } = appItem;
   return (
     <section>
-      <Link to={`/appCardDetail/${id}`}>
+      <Link to={`/appDetail/${id}`}>
         <div className="card bg-base-100 shadow-sm h-72">
           <figure className="px-4 pt-4">
             <img src={image} className="h-36 w-2/3 object-fill" alt="app" />

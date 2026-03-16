@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import AppCard from './AppCard';
 
 const TrendyApps = ({ apiData }) => {
-  console.log(apiData);
+  // console.log(apiData);
   return (
     <div className="space-y-4">
       <h1 className="text-center text-3xl font-bold">Trending Apps</h1>
