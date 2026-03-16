@@ -4,6 +4,7 @@ import NotFound from '../pages/NotFound';
 import Home from '../pages/Home';
 import Apps from '../pages/Apps';
 import Installation from '../pages/Installation';
+import axios from 'axios';
 
 let PublicRouter = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ let PublicRouter = createBrowserRouter([
       {
         index: true,
         Component: Home,
+        loader: async () => {
+          const response = await axios.get('/demoData.json');
+          return response;
+        },
       },
       {
         path: '/apps',

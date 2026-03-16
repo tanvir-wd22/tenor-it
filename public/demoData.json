@@ -1,0 +1,377 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/v6cdJtHN/pomodoro.png",
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "productive.io",
+    "description": "This focus app takes the proven Pomodoro technique and makes it even more practical for modern lifestyles. Instead of just setting a timer, it builds a complete environment for deep work, minimizing distractions and maximizing concentration. Users can create custom work and break intervals, track how many sessions they complete each day, and review detailed statistics about their focus habits over time.\n\nA unique feature of this app is the integration of task lists with timers. You can assign each task to a specific Pomodoro session, making your schedule more structured. The built-in analytics show how much time you’ve worked and which tasks consumed the most energy.\n\nThe app also includes optional background sounds such as white noise and nature sounds. Gamified achievements motivate users to stay consistent with their work sessions.",
+    "size": 250,
+    "reviews": 45,
+    "ratingAvg": 4.2,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 4 },
+      { "name": "3 star", "count": 8 },
+      { "name": "4 star", "count": 15 },
+      { "name": "5 star", "count": 16 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/j9xPyh8Z/time.png",
+    "title": "FocusFlow - Smart Productivity Timer",
+    "companyName": "zenlabs",
+    "description": "FocusFlow helps professionals maintain concentration while working on demanding tasks. The app provides distraction blocking, smart timers, and productivity reports.\n\nUsers can organize tasks and track daily progress with visual charts. Ambient sounds and minimal design keep your mind calm while working.\n\nMotivational streaks reward consistent work habits and encourage productivity.",
+    "size": 180,
+    "reviews": 60,
+    "ratingAvg": 4.5,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 10 },
+      { "name": "4 star", "count": 20 },
+      { "name": "5 star", "count": 22 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/Jbg84pc/timer.png",
+    "title": "TaskZen - Minimal Task Manager",
+    "companyName": "zenware",
+    "description": "TaskZen simplifies task planning and productivity tracking. Create lists, manage projects, and analyze time spent on each task.\n\nThe interface is simple and distraction-free, allowing users to focus on what matters.\n\nAnalytics help improve efficiency and productivity habits.",
+    "size": 210,
+    "reviews": 50,
+    "ratingAvg": 4.3,
+    "downloads": 8,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 8 },
+      { "name": "4 star", "count": 18 },
+      { "name": "5 star", "count": 17 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/60xGc1cr/time-1.png",
+    "title": "NoteNest - Organized Note Taking",
+    "companyName": "brainbox",
+    "description": "NoteNest is a powerful note-taking application designed for students and professionals.\n\nOrganize ideas, save research, and create structured notes easily.\n\nSearch, tags, and sync features keep your knowledge accessible anytime.",
+    "size": 160,
+    "reviews": 40,
+    "ratingAvg": 4.0,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 4 },
+      { "name": "3 star", "count": 10 },
+      { "name": "4 star", "count": 13 },
+      { "name": "5 star", "count": 10 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/bgyVRYxF/time-2.png",
+    "title": "HabitSpark - Daily Habit Tracker",
+    "companyName": "habitworks",
+    "description": "HabitSpark helps users build positive habits through daily reminders and tracking tools.\n\nVisual streaks and milestone achievements keep motivation high.\n\nUsers can analyze consistency through weekly and monthly progress charts.",
+    "size": 140,
+    "reviews": 55,
+    "ratingAvg": 4.4,
+    "downloads": 9,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 9 },
+      { "name": "4 star", "count": 18 },
+      { "name": "5 star", "count": 20 }
+    ]
+  },
+
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/JjjjSc4p/schedule.png",
+    "title": "CalmStudy - Relaxed Study Timer",
+    "companyName": "focuslab",
+    "description": "CalmStudy combines study timers with relaxing background sounds to improve concentration.\n\nStudents can create study plans and track their learning sessions.\n\nDetailed reports help measure productivity.",
+    "size": 190,
+    "reviews": 48,
+    "ratingAvg": 4.1,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 9 },
+      { "name": "4 star", "count": 14 },
+      { "name": "5 star", "count": 16 }
+    ]
+  },
+
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/tPNwtM05/timer-1.png",
+    "title": "DeepFocus - Distraction Blocker",
+    "companyName": "mindware",
+    "description": "DeepFocus blocks distracting apps and websites while you work.\n\nIt encourages long periods of deep work using timed focus sessions.\n\nStatistics show improvements in productivity over time.",
+    "size": 170,
+    "reviews": 52,
+    "ratingAvg": 4.3,
+    "downloads": 8,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 10 },
+      { "name": "4 star", "count": 16 },
+      { "name": "5 star", "count": 18 }
+    ]
+  },
+
+  {
+    "id": 8,
+    "image": "https://i.ibb.co.com/0yDcnB8f/timer-2.png",
+    "title": "QuickNotes - Instant Note Capture",
+    "companyName": "notely",
+    "description": "QuickNotes lets users capture thoughts instantly.\n\nOrganize notes with tags and categories.\n\nCloud sync keeps everything accessible across devices.",
+    "size": 130,
+    "reviews": 36,
+    "ratingAvg": 3.9,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 4 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 9 },
+      { "name": "4 star", "count": 10 },
+      { "name": "5 star", "count": 7 }
+    ]
+  },
+
+  {
+    "id": 9,
+    "image": "https://i.ibb.co.com/CKFDS76C/timer-3.png",
+    "title": "BrainBoost - Cognitive Training",
+    "companyName": "neurix",
+    "description": "BrainBoost offers cognitive exercises designed to improve memory and focus.\n\nDaily challenges stimulate mental activity.\n\nPerformance tracking helps monitor improvement.",
+    "size": 220,
+    "reviews": 44,
+    "ratingAvg": 4.2,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 9 },
+      { "name": "4 star", "count": 14 },
+      { "name": "5 star", "count": 14 }
+    ]
+  },
+
+  {
+    "id": 10,
+    "image": "https://i.ibb.co.com/mCWxYQfc/time-3.png",
+    "title": "StudyMate - Smart Study Planner",
+    "companyName": "eduworks",
+    "description": "StudyMate assists students with scheduling study sessions.\n\nTask planning and reminders help maintain discipline.\n\nAnalytics provide insights into study habits.",
+    "size": 200,
+    "reviews": 58,
+    "ratingAvg": 4.5,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 4 },
+      { "name": "3 star", "count": 9 },
+      { "name": "4 star", "count": 20 },
+      { "name": "5 star", "count": 23 }
+    ]
+  },
+
+  {
+    "id": 11,
+    "image": "https://i.ibb.co.com/kVKZXTLg/hourglass.png",
+    "title": "PlanDay - Daily Task Organizer",
+    "companyName": "organix",
+    "description": "PlanDay helps organize daily tasks with a clear visual planner.\n\nDrag-and-drop scheduling makes planning easy.\n\nProgress charts help measure productivity.",
+    "size": 150,
+    "reviews": 42,
+    "ratingAvg": 4.1,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 9 },
+      { "name": "4 star", "count": 13 },
+      { "name": "5 star", "count": 12 }
+    ]
+  },
+
+  {
+    "id": 12,
+    "image": "https://i.ibb.co.com/GQY24m8x/timer-4.png",
+    "title": "ZenTimer - Custom Pomodoro Timer",
+    "companyName": "flowapps",
+    "description": "ZenTimer offers customizable Pomodoro timers.\n\nAmbient soundscapes help maintain focus.\n\nDaily reports highlight productivity improvements.",
+    "size": 175,
+    "reviews": 39,
+    "ratingAvg": 4.0,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 8 },
+      { "name": "4 star", "count": 12 },
+      { "name": "5 star", "count": 10 }
+    ]
+  },
+
+  {
+    "id": 13,
+    "image": "https://i.ibb.co.com/pjkxfPxr/alarm-1.png",
+    "title": "TaskPilot - Project Task Manager",
+    "companyName": "workflowx",
+    "description": "TaskPilot manages projects with task boards and progress tracking.\n\nCollaboration tools help teams stay aligned.\n\nReports give insights into workflow efficiency.",
+    "size": 230,
+    "reviews": 64,
+    "ratingAvg": 4.6,
+    "downloads": 12,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 4 },
+      { "name": "3 star", "count": 10 },
+      { "name": "4 star", "count": 22 },
+      { "name": "5 star", "count": 26 }
+    ]
+  },
+
+  {
+    "id": 14,
+    "image": "https://i.ibb.co.com/nNqVMsDz/watch.png",
+    "title": "MindJournal - Guided Reflection Journal",
+    "companyName": "reflectio",
+    "description": "MindJournal encourages daily reflection through guided journaling.\n\nUsers can track mood and personal growth.\n\nInsights help develop better habits.",
+    "size": 160,
+    "reviews": 41,
+    "ratingAvg": 4.2,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 8 },
+      { "name": "4 star", "count": 13 },
+      { "name": "5 star", "count": 13 }
+    ]
+  },
+
+  {
+    "id": 15,
+    "image": "https://i.ibb.co.com/HTq6P9Np/stopwatch.png",
+    "title": "FocusGarden - Gamified Focus Timer",
+    "companyName": "greenapps",
+    "description": "FocusGarden turns productivity into a virtual garden.\n\nEach completed focus session grows plants.\n\nGamification encourages consistent work habits.",
+    "size": 210,
+    "reviews": 53,
+    "ratingAvg": 4.4,
+    "downloads": 9,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 9 },
+      { "name": "4 star", "count": 18 },
+      { "name": "5 star", "count": 19 }
+    ]
+  },
+
+  {
+    "id": 16,
+    "image": "https://i.ibb.co.com/yFvBpBf9/stopwatch-1.png",
+    "title": "DailyGoals - Goal Tracking App",
+    "companyName": "goalify",
+    "description": "DailyGoals helps track short-term objectives and habits.\n\nReminders keep you accountable.\n\nWeekly summaries show productivity trends.",
+    "size": 140,
+    "reviews": 37,
+    "ratingAvg": 4.0,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 7 },
+      { "name": "4 star", "count": 11 },
+      { "name": "5 star", "count": 10 }
+    ]
+  },
+
+  {
+    "id": 17,
+    "image": "https://i.ibb.co.com/j9wzn568/stopwatch-2.png",
+    "title": "IdeaVault - Creative Idea Manager",
+    "companyName": "brainhub",
+    "description": "IdeaVault is designed to store and organize creative ideas.\n\nTags and folders make navigation simple.\n\nSync keeps your ideas safe across devices.",
+    "size": 150,
+    "reviews": 40,
+    "ratingAvg": 4.1,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 8 },
+      { "name": "4 star", "count": 12 },
+      { "name": "5 star", "count": 12 }
+    ]
+  },
+
+  {
+    "id": 18,
+    "image": "https://i.ibb.co.com/ch6pWpF3/kitchen-timer.png",
+    "title": "TimeTrackr - Professional Time Tracker",
+    "companyName": "clockifylabs",
+    "description": "TimeTrackr measures how much time you spend on tasks.\n\nDetailed reports help optimize productivity.\n\nTeams can collaborate and share project progress.",
+    "size": 240,
+    "reviews": 66,
+    "ratingAvg": 4.6,
+    "downloads": 13,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 4 },
+      { "name": "3 star", "count": 11 },
+      { "name": "4 star", "count": 24 },
+      { "name": "5 star", "count": 25 }
+    ]
+  },
+
+  {
+    "id": 19,
+    "image": "https://i.ibb.co.com/twjp3Bd4/timer-5.png",
+    "title": "StudyPulse - Learning Progress Tracker",
+    "companyName": "learnlabs",
+    "description": "StudyPulse tracks study sessions and learning progress.\n\nSmart reminders keep you on schedule.\n\nProgress analytics reveal your most productive hours.",
+    "size": 190,
+    "reviews": 47,
+    "ratingAvg": 4.3,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 9 },
+      { "name": "4 star", "count": 15 },
+      { "name": "5 star", "count": 16 }
+    ]
+  },
+
+  {
+    "id": 20,
+    "image": "https://i.ibb.co.com/cS16S5Kp/deadline.png",
+    "title": "FocusBeat - Productivity Music Timer",
+    "companyName": "audiomind",
+    "description": "FocusBeat combines productivity timers with focus music.\n\nSpecially designed soundtracks help maintain concentration.\n\nUsers can analyze productivity sessions and maintain streaks.",
+    "size": 205,
+    "reviews": 49,
+    "ratingAvg": 4.2,
+    "downloads": 8,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 9 },
+      { "name": "4 star", "count": 16 },
+      { "name": "5 star", "count": 16 }
+    ]
+  }
+]
