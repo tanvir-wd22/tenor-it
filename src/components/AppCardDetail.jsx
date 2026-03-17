@@ -4,19 +4,23 @@ import iconRatings from '../assets/icon-ratings.png';
 import iconReview from '../assets/icon-review.png';
 import { ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { BarChart, Bar } from 'recharts';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 const AppCardDetail = () => {
   const loadedAllData = useLoaderData();
   //   console.log(loadedAllData);
-  const allCardsData = loadedAllData.data;
-  //   console.log(allCardsData);
   const { cardId } = useParams();
   //   console.log(typeof cardId);
+  const [isInstalled, setIsInstalled] = useState(false);
+  const allCardsData = loadedAllData.data;
+  //   console.log(allCardsData);
   const singleCardData = allCardsData.find(
     (item) => item.id === Number(cardId)
   );
   //   console.log(singleCardData);
   const {
+    id,
     title,
     image,
     companyName,
@@ -32,6 +36,16 @@ const AppCardDetail = () => {
     (a, b) => parseInt(b.name) - parseInt(a.name)
   );
 
+  const handleInstallBtn = (id) => {
+    // store app with id
+    // store that app id inside a array collection
+    // if app id already exist then show a alert
+    // if not exist then push that app id into a array collection
+    console.log(id);
+    setIsInstalled(true);
+    toast.success('App successfully installed');
+  };
+
   return (
     <div className="bg-base-100">
       <div className="w-11/12 max-w-7xl mx-auto">
@@ -39,7 +53,7 @@ const AppCardDetail = () => {
         <section className="hero">
           <div className="hero-content flex-col lg:flex-row gap-8 lg:gap-16">
             <div className="w-full">
-              <img src={image} className="object-cover" />
+              <img src={image} className="w-full object-cover" />
             </div>
             <div className="space-y-6">
               {/* info */}
@@ -79,8 +93,12 @@ const AppCardDetail = () => {
               </div>
               {/* btn */}
               <div>
-                <button className="btn btn-success">
-                  {`Install Now (${size} MB)`}
+                <button
+                  onClick={() => handleInstallBtn(id)}
+                  disabled={isInstalled}
+                  className="btn btn-success"
+                >
+                  {isInstalled ? `Installed` : `Install Now (${size} MB)`}
                 </button>
               </div>
             </div>
