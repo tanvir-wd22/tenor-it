@@ -1,11 +1,20 @@
 import { useLoaderData } from 'react-router';
 import AppCard from '../components/AppCard';
+import { useState } from 'react';
 
 const Apps = () => {
   const loadedAllData = useLoaderData();
   // console.log(loadedAllData);
-  const allCardsData = loadedAllData.data;
-  // console.log(allCardsData);
+  const originalData = loadedAllData.data;
+  // console.log(originalData);
+  const [allData, setAllData] = useState(originalData);
+  const handleSearchInput = (value) => {
+    const result = originalData.filter((appItem) =>
+      appItem.title.toLowerCase().includes(value.toLowerCase())
+    );
+    setAllData(result);
+  };
+  // console.log('dynamically update check ', allData);
 
   return (
     <div className="w-11/12 max-w-7xl mx-auto space-y-4">
@@ -15,7 +24,7 @@ const Apps = () => {
       </p>
       <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center">
         <span className="text-lg font-medium">
-          {`(${allCardsData.length}) Apps Found`}
+          {`(${allData.length}) Apps Found`}
         </span>
         <label className="input">
           <svg
@@ -34,11 +43,15 @@ const Apps = () => {
               <path d="m21 21-4.3-4.3"></path>
             </g>
           </svg>
-          <input type="search" placeholder="Search Apps" />
+          <input
+            onChange={(e) => handleSearchInput(e.target.value)}
+            type="search"
+            placeholder="Search Apps"
+          />
         </label>
       </div>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-        {allCardsData.map((appItem) => (
+        {allData.map((appItem) => (
           <AppCard appItem={appItem} key={appItem.id}></AppCard>
         ))}
       </div>
