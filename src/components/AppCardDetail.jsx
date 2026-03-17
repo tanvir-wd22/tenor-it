@@ -5,14 +5,14 @@ import iconReview from '../assets/icon-review.png';
 import { ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { BarChart, Bar } from 'recharts';
 import { useState } from 'react';
-import toast from 'react-hot-toast';
+import { setAppToLS } from '../utilities/localStorage';
 
 const AppCardDetail = () => {
+  const [isInstalled, setIsInstalled] = useState(false);
   const loadedAllData = useLoaderData();
   //   console.log(loadedAllData);
   const { cardId } = useParams();
   //   console.log(typeof cardId);
-  const [isInstalled, setIsInstalled] = useState(false);
   const allCardsData = loadedAllData.data;
   //   console.log(allCardsData);
   const singleCardData = allCardsData.find(
@@ -42,8 +42,8 @@ const AppCardDetail = () => {
     // if app id already exist then show a alert
     // if not exist then push that app id into a array collection
     console.log(id);
+    setAppToLS(id);
     setIsInstalled(true);
-    toast.success('App successfully installed');
   };
 
   return (

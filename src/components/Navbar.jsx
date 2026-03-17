@@ -16,7 +16,7 @@ const Navbar = () => {
       </li>
     </>
   );
-  
+
   return (
     <div>
       <div className="navbar bg-base-300 shadow-sm">
@@ -45,7 +45,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <div>
+          <div className="hidden sm:block">
             <Link to="/">
               <button className="btn btn-ghost flex items-center gap-1">
                 <img src={logo} className="w-8" alt="logo" />
