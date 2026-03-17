@@ -2,22 +2,38 @@ import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import { getAppsFromLS } from '../utilities/localStorage';
 import InstalledAppCard from '../components/InstalledAppCard';
+import errorApp from '../assets/error-app.png';
 
 const Installation = () => {
+  const [installedList, setInstalledList] = useState([]);
+  const [sortType, setSortType] = useState('');
   const loadedAllData = useLoaderData();
   // console.log(loadedAllData);
-  const [installedList, setInstalledList] = useState([]);
-  const originalData = loadedAllData.data;
-  console.log(originalData);
+
+  const handleSortedList = (type) => {
+    setSortType(type);
+    if (type === 'low-high') {
+      const sortByLowToHigh = [...installedList].sort(
+        (a, b) => a.downloads - b.downloads
+      );
+      setInstalledList(sortByLowToHigh);
+    }
+    if (type === 'high-low') {
+      const sortByHighToLow = [...installedList].sort(
+        (x, y) => y.downloads - x.downloads
+      );
+      setInstalledList(sortByHighToLow);
+    }
+  };
 
   useEffect(() => {
-    const lsInstalledList = getAppsFromLS();
-    const filteredInstalledList = originalData.filter((appItem) =>
-      lsInstalledList.includes(appItem.id)
+    const localStorageList = getAppsFromLS();
+    const matchDataList = loadedAllData?.data.filter((appItem) =>
+      localStorageList.includes(appItem.id)
     );
-    setInstalledList(filteredInstalledList);
-  }, [originalData]);
-  console.log(installedList);
+    setInstalledList(matchDataList);
+  }, [loadedAllData]);
+  // console.log(installedList);
 
   return (
     <div className="w-11/12 max-w-7xl mx-auto space-y-4">
@@ -31,28 +47,40 @@ const Installation = () => {
         <span className="text-lg font-medium">{`(${installedList.length}) Apps Found`}</span>
         <div className="dropdown dropdown-bottom dropdown-end">
           <div tabIndex={0} role="button" className="btn m-1">
-            Click ⬇️
+            Sort
           </div>
           <ul
-            tabIndex="-1"
+            tabIndex={-1}
             className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
           >
             <li>
-              <a>Item 1</a>
+              <a onClick={() => handleSortedList('low-high')}>
+                {sortType === 'low-high' && `⬆️`}
+                Low-High
+              </a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a onClick={() => handleSortedList('high-low')}>
+                {sortType === 'high-low' && `⬇️`}
+                High-Low
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div className="grid gap-6 grid-cols-1">
-        {installedList.map((appItem) => (
-          <InstalledAppCard
-            appItem={appItem}
-            key={appItem.id}
-          ></InstalledAppCard>
-        ))}
+        {installedList.length === 0 ? (
+          <div className="col-span-full">
+            <img src={errorApp} className="max-w-sm mx-auto" alt="not found" />
+          </div>
+        ) : (
+          installedList.map((appItem) => (
+            <InstalledAppCard
+              appItem={appItem}
+              key={appItem.id}
+            ></InstalledAppCard>
+          ))
+        )}
       </div>
     </div>
   );

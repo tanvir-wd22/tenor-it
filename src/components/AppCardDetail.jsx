@@ -13,7 +13,7 @@ const AppCardDetail = () => {
   //   console.log(loadedAllData);
   const { cardId } = useParams();
   //   console.log(typeof cardId);
-  const allCardsData = loadedAllData.data;
+  const allCardsData = loadedAllData?.data || [];
   //   console.log(allCardsData);
   const singleCardData = allCardsData.find(
     (item) => item.id === Number(cardId)

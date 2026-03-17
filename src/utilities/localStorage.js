@@ -26,6 +26,7 @@ const setAppToLS = (id) => {
     const stringifiedData = JSON.stringify(parsedData);
     localStorage.setItem('appsList', stringifiedData);
     toast.success('App successfully installed');
+    return;
   }
 };
 

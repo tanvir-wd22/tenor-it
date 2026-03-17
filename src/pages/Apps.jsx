@@ -6,7 +6,7 @@ import errorApp from '../assets/error-app.png';
 const Apps = () => {
   const loadedAllData = useLoaderData();
   // console.log(loadedAllData);
-  const originalData = loadedAllData.data;
+  const originalData = loadedAllData?.data || [];
   // console.log(originalData);
   const [allData, setAllData] = useState(originalData);
   const handleSearchInput = (value) => {
@@ -22,7 +22,9 @@ const Apps = () => {
 
   return (
     <div className="w-11/12 max-w-7xl mx-auto space-y-4">
-      <h1 className="text-center text-3xl sm:text-4xl font-bold ">Our All Applications</h1>
+      <h1 className="text-center text-3xl sm:text-4xl font-bold ">
+        Our All Applications
+      </h1>
       <p className="text-center opacity-70">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>

@@ -6,6 +6,7 @@ import Apps from '../pages/Apps';
 import Installation from '../pages/Installation';
 import axios from 'axios';
 import AppCardDetail from '../components/AppCardDetail';
+import Spinner from '../components/Spinner';
 
 let PublicRouter = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ let PublicRouter = createBrowserRouter([
       {
         index: true,
         Component: Home,
+        HydrateFallback: Spinner,
         loader: async () => {
           const response = await axios.get('/demoData.json');
           return response;
@@ -24,6 +26,7 @@ let PublicRouter = createBrowserRouter([
       {
         path: '/apps',
         Component: Apps,
+        HydrateFallback: Spinner,
         loader: async () => {
           const response = await axios.get('/demoData.json');
           return response;
@@ -32,6 +35,7 @@ let PublicRouter = createBrowserRouter([
       {
         path: '/installation',
         Component: Installation,
+        HydrateFallback: Spinner,
         loader: async () => {
           const response = await axios.get('/demoData.json');
           return response;
@@ -40,6 +44,7 @@ let PublicRouter = createBrowserRouter([
       {
         path: '/appDetail/:cardId',
         Component: AppCardDetail,
+        HydrateFallback: Spinner,
         loader: async () => {
           const response = await axios.get('/demoData.json');
           return response;

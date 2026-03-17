@@ -6,7 +6,7 @@ import TrendyApps from '../components/TrendyApps';
 const Home = () => {
   const loadedData = useLoaderData();
   // console.log(loadedData?.data);
-  const apiData = loadedData?.data;
+  const apiData = loadedData?.data.slice(0, 8) || [];
 
   return (
     <div>
