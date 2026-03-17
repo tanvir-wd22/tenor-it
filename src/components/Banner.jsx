@@ -4,7 +4,7 @@ import apple from '../assets/apple.png';
 const Banner = () => {
   return (
     <div className="space-y-4">
-      <h1 className="text-center font-bold text-3xl lg:text-5xl">
+      <h1 className="text-center font-bold text-3xl sm:text-5xl">
         We Build <br />
         <span className="text-purple-500 mr-2">Productive</span>
         Apps

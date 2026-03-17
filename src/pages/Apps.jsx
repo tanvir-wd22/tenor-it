@@ -1,6 +1,7 @@
 import { useLoaderData } from 'react-router';
 import AppCard from '../components/AppCard';
 import { useState } from 'react';
+import errorApp from '../assets/error-app.png';
 
 const Apps = () => {
   const loadedAllData = useLoaderData();
@@ -13,12 +14,15 @@ const Apps = () => {
       appItem.title.toLowerCase().includes(value.toLowerCase())
     );
     setAllData(result);
+    if (result.length === 0) {
+      return 0;
+    }
   };
   // console.log('dynamically update check ', allData);
 
   return (
     <div className="w-11/12 max-w-7xl mx-auto space-y-4">
-      <h1 className="text-center text-3xl font-bold ">Our All Applications</h1>
+      <h1 className="text-center text-3xl sm:text-4xl font-bold ">Our All Applications</h1>
       <p className="text-center opacity-70">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
@@ -51,9 +55,15 @@ const Apps = () => {
         </label>
       </div>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-        {allData.map((appItem) => (
-          <AppCard appItem={appItem} key={appItem.id}></AppCard>
-        ))}
+        {allData.length === 0 ? (
+          <div className="col-span-full">
+            <img src={errorApp} className="max-w-xs mx-auto" alt="Not Found" />
+          </div>
+        ) : (
+          allData.map((appItem) => (
+            <AppCard appItem={appItem} key={appItem.id}></AppCard>
+          ))
+        )}
       </div>
     </div>
   );

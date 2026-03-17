@@ -5,7 +5,7 @@ const TrendyApps = ({ apiData }) => {
   // console.log(apiData);
   return (
     <div className="space-y-4">
-      <h1 className="text-center text-3xl font-bold">Trending Apps</h1>
+      <h1 className="text-center text-3xl sm:text-4xl font-bold">Trending Apps</h1>
       <p className="text-center opacity-70">
         Explore All Trending Apps on the Market developed by us
       </p>

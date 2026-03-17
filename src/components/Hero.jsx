@@ -7,10 +7,10 @@ const Hero = () => {
       </div>
       <div className="py-8 bg-linear-to-r from-purple-700 to-violet-400 flex justify-center items-center">
         <div className="text-white ">
-          <h1 className="text-3xl text-center font-bold mb-4">
+          <h1 className="text-2xl sm:text-4xl text-center font-bold mb-4">
             Trusted by Millions, Built for You
           </h1>
-          <div className="stats stats-vertical lg:stats-horizontal">
+          <div className="stats stats-vertical sm:stats-horizontal">
             <div className="stat ">
               <div className="stat-title text-white">Total Downloads</div>
               <div className="stat-value">29.6M</div>

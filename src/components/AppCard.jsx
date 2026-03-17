@@ -9,7 +9,11 @@ const AppCard = ({ appItem }) => {
       <Link to={`/appDetail/${id}`}>
         <div className="card bg-base-100 shadow-sm h-72 ">
           <figure className="px-4 pt-4">
-            <img src={image} className="h-36 w-full object-fill" alt="app" />
+            <img
+              src={image}
+              className="h-36 w-full object-fill"
+              alt="app"
+            />
           </figure>
           <div className="card-body justify-between">
             <h2 className="text-md font-medium text-center">{title}</h2>
