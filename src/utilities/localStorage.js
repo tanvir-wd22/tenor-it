@@ -5,7 +5,7 @@ const getAppsFromLS = () => {
   if (!stringifiedData) {
     return [];
   }
-  
+
   try {
     const parsedData = JSON.parse(stringifiedData);
     return parsedData;
@@ -17,12 +17,12 @@ const getAppsFromLS = () => {
 
 const setAppToLS = (id) => {
   const parsedData = getAppsFromLS();
-  const convertedId = String(id);
 
-  if (parsedData.includes(convertedId)) {
+  if (parsedData.includes(id)) {
     toast.error('App already exists');
+    return;
   } else {
-    parsedData.push(convertedId);
+    parsedData.push(id);
     const stringifiedData = JSON.stringify(parsedData);
     localStorage.setItem('appsList', stringifiedData);
     toast.success('App successfully installed');

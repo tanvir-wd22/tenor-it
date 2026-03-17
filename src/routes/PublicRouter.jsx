@@ -32,6 +32,10 @@ let PublicRouter = createBrowserRouter([
       {
         path: '/installation',
         Component: Installation,
+        loader: async () => {
+          const response = await axios.get('/demoData.json');
+          return response;
+        },
       },
       {
         path: '/appDetail/:cardId',
