@@ -8,6 +8,6 @@ body {
 }
 
 a.active {
-  background-color: rgb(6, 203, 6);
-  color: white;
+  background-color: rgb(137, 45, 226);
+  color: rgb(240, 235, 235);
 }
