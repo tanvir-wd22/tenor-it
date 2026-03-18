@@ -123,7 +123,13 @@ const AppCardDetail = () => {
         {/* description section */}
         <section className="w-full mt-8">
           <h1 className="text-xl font-medium mb-2">Description</h1>
-          <p className="text-justify">{description}</p>
+          <p className="text-justify">
+            {description.split('\n\n').map((para, i) => (
+              <p key={i} className="mb-4 leading-relaxed">
+                {para}
+              </p>
+            ))}
+          </p>
         </section>
       </div>
     </div>
