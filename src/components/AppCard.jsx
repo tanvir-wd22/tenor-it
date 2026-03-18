@@ -7,7 +7,7 @@ const AppCard = ({ appItem }) => {
   return (
     <section>
       <Link to={`/appDetail/${id}`}>
-        <div className="card bg-base-100 shadow-sm h-72 ">
+        <div className="card bg-base-200 shadow-sm h-72 ">
           <figure className="px-4 pt-4">
             <img
               src={image}

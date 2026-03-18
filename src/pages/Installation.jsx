@@ -57,8 +57,8 @@ const Installation = () => {
       <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center">
         <span className="text-lg font-medium">{`(${installedList.length}) Apps Found`}</span>
         <div className="dropdown dropdown-bottom dropdown-end">
-          <div tabIndex={0} role="button" className="btn m-1">
-            Sort
+          <div tabIndex={0} role="button" className="btn btn-soft m-1">
+            Sort by downloads
           </div>
           <ul
             tabIndex={-1}

@@ -5,7 +5,7 @@ const InstalledAppCard = ({ appItem, handleUninstallBtn }) => {
   const { id, image, title, downloads, ratingAvg, size } = appItem;
 
   return (
-    <div className="card bg-base-300 shadow-sm h-32 flex flex-row items-center justify-between">
+    <div className="card bg-base-200 shadow-sm h-32 flex flex-row items-center justify-between">
       {/* left side */}
       <div className="flex items-center gap-2 sm:gap-4">
         <figure className="px-4 py-4">

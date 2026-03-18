@@ -9,7 +9,7 @@ const getAppsFromLS = () => {
       const parsedData = JSON.parse(stringifiedData);
       return parsedData;
     } catch (error) {
-      console.log('localstorage data corrupted', error);
+      alert('localstorage data corrupted', error);
       return [];
     }
   } else {
