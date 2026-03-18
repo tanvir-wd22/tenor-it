@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
-import { getAppsFromLS } from '../utilities/localStorage';
+import { deleteAppFromLS, getAppsFromLS } from '../utilities/localStorage';
 import InstalledAppCard from '../components/InstalledAppCard';
 import errorApp from '../assets/error-app.png';
 
 const Installation = () => {
   const [installedList, setInstalledList] = useState([]);
+  // console.log(installedList);
   const [sortType, setSortType] = useState('');
+  // console.log(sortType);
   const loadedAllData = useLoaderData();
   // console.log(loadedAllData);
 
@@ -24,6 +26,15 @@ const Installation = () => {
       );
       setInstalledList(sortByHighToLow);
     }
+  };
+
+  const handleUninstallBtn = (id) => {
+    // console.log(id);
+    deleteAppFromLS(id);
+    const updatedInstalledList = installedList.filter(
+      (appItem) => appItem.id !== id
+    );
+    setInstalledList(updatedInstalledList);
   };
 
   useEffect(() => {
@@ -78,6 +89,7 @@ const Installation = () => {
             <InstalledAppCard
               appItem={appItem}
               key={appItem.id}
+              handleUninstallBtn={handleUninstallBtn}
             ></InstalledAppCard>
           ))
         )}

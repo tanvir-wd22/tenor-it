@@ -1,8 +1,8 @@
 import { PiDownloadSimpleBold } from 'react-icons/pi';
 import { FaStar } from 'react-icons/fa';
 
-const InstalledAppCard = ({ appItem }) => {
-  const { image, title, downloads, ratingAvg, size } = appItem;
+const InstalledAppCard = ({ appItem, handleUninstallBtn }) => {
+  const { id, image, title, downloads, ratingAvg, size } = appItem;
 
   return (
     <div className="card bg-base-300 shadow-sm h-32 flex flex-row items-center justify-between">
@@ -22,13 +22,20 @@ const InstalledAppCard = ({ appItem }) => {
               <FaStar></FaStar>
               <span>{ratingAvg}</span>
             </button>
-            <p className="text-xs sm:text-sm font-medium opacity-70">{size} MB</p>
+            <p className="text-xs sm:text-sm font-medium opacity-70">
+              {size} MB
+            </p>
           </div>
         </div>
       </div>
       {/* right side */}
       <div className="pr-4">
-        <button className="btn btn-xs sm:btn-block btn-error">Uninstall</button>
+        <button
+          onClick={() => handleUninstallBtn(id)}
+          className="btn btn-xs sm:btn-block btn-error"
+        >
+          Uninstall
+        </button>
       </div>
     </div>
   );

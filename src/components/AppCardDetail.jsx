@@ -41,7 +41,7 @@ const AppCardDetail = () => {
     // store that app id inside a array collection
     // if app id already exist then show a alert
     // if not exist then push that app id into a array collection
-    console.log(id);
+    // console.log(id);
     setAppToLS(id);
     setIsInstalled(true);
   };
