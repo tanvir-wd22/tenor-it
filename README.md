@@ -1,6 +1,7 @@
 # 🚀 Tenor IT
 
-🔗 **Live Site:** https://tenor-it-level-2.netlify.app/
+🔗 **Live Site 1:** https://tenor-it.vercel.app/
+🔗 **Live Site 2:** https://tenor-it-level-2.netlify.app/
 
 ---
 
@@ -10,7 +11,7 @@ This project is a dynamic app management web application where users can explore
 
 Users can install apps, which are stored in local storage, and later view, sort, or uninstall them seamlessly. The application ensures a smooth user experience with features like search functionality, loading spinners, error handling, and active navigation states.
 
-Additionally, the project is optimized for deployment, with routing issues (such as Netlify reload problems) properly handled to ensure stable performance in production.
+Additionally, the project is optimized for deployment, with routing issues properly handled to ensure stable performance in production.
 
 ---
 
@@ -61,15 +62,11 @@ Additionally, the project is optimized for deployment, with routing issues (such
 
 * 🔄 **Sorting System**
 
-  * Sort installed apps based on criteria (e.g., name, rating, etc.)
+  * Sort installed apps based on downloads
 
 * ⏳ **Loading Experience**
 
   * Spinner added for better loading feedback
-
-* 🌐 **Deployment Fix**
-
-  * Netlify reload issue resolved for smooth routing
 
 ---
 
